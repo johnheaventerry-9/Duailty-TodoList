@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ToDoController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('todos', ToDoController::class);
+Route::get('/index', [ToDoController::class, 'index']);
