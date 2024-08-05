@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a4b; /* Dark blue background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: #14143b; /* Slightly darker blue */
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff; /* White heading */
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#app {
+    background-color: #fff;
+    color: #1a1a4b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+ul.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li.pending span {
+    color: #1a1a4b;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+form.form-inline {
+    display: inline;
+}
+
+button.btn-delete {
+    background: none;
+    border: none;
+    color: #ff0000;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button.btn-delete:hover {
+    color: #cc0000;
+}
+
+form.new-task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn-add {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a1a4b; /* Matching button color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn-add:hover {
+    background-color: #14143b; /* Slightly darker blue on hover */
+}
